@@ -73,6 +73,9 @@ export function YearField({ start, end, ...rest }) {
     (_, index) => index + start
   )
   const handleChange = event => {
+    if (rest.onChange) {
+      rest.onChange(event)
+    }
     const newDate = new Date(date.getTime())
     newDate.setYear(parseInt(event.target.value), 1)
     onChange(newDate)

@@ -61,9 +61,13 @@ export default function SignupForm() {
           <DateFields
             value={startDate}
             onChange={setStartDate}
-            start={2018}
-            end={2019}
-          />
+            // start={2018}
+            // end={2019}
+          >
+            <YearField start={2018} end={2019} aria-label="Start year" />
+            <MonthField aria-label="Start Month" />
+            <DayField aria-label="Start Day" />
+          </DateFields>
         </p>
         <TabsButton>
           <FaDumbbell />

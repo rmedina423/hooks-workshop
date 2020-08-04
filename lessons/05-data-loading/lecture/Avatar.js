@@ -244,7 +244,7 @@ export default function Avatar({ uid, size = 50, bg, className, ...rest }) {
 //   const posts = null
 
 //   useEffect(() => {
-//     let isMounted = true
+//     let isMounted = true // let current = true
 //
 //     fetchUser(uid).then(user => {
 //       if (isMounted) setUser(user)

@@ -84,6 +84,8 @@ export default function SignupForm() {
 //         case "UPDATE_DATE":
 //           return { ...state, startDate: action.date }
 //         default: {
+//            case can be made to throw an error because these reducers are isolated
+//              throw new Error(`Unkown action ${action.type}`)
 //         }
 //       }
 //     },
